@@ -162,10 +162,11 @@ class HomePage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                       ),
                     ),
-                    onPressed: () {},
-                    child: Text(
-                      "Забронировать",
-                      style: TextStyle(fontSize: 16),
+                    onPressed: () {
+  ScaffoldMessenger.of(context).showSnackBar(
+    SnackBar(content: Text('Вы забронировали домик!')),
+  );
+},
                     ),
                   ),
                 )
