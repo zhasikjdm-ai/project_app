@@ -72,11 +72,7 @@ class HomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           onPressed: () {
-  ScaffoldMessenger.of(context).showSnackBar(
-    SnackBar(content: Text('Вы забронировали домик!')),
-  );
-},
-
+            
           // 🔥 БАННЕР
           Stack(
             children: [
